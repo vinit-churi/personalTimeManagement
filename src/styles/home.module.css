@@ -1,0 +1,58 @@
+/* Gradient in Hex */
+/* linear-gradient(to right, #10212C 0%, 50%, #9F764E 100%); */
+
+/* Gradient in RGBA  */
+/* linear-gradient(to right, rgba(16, 33, 44, 1) 0%, 50%, rgba(159, 118, 78, 1) 100%); */
+.home {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 300px;
+    height: calc(100vh - 170px);
+    /* background-color: palegoldenrod; */
+    align-items: center;
+    padding: 0px 30px;
+    justify-content: space-between;
+}
+.app_info {
+    flex: 1 1 30%;
+    /* background-color: greenyellow; */
+    color: aliceblue;
+    max-width: 500px;
+}
+.home_img {
+    flex: 0 0 max-content;
+    /* background-color: red; */
+}
+.home_img img {
+    width: 400px;
+    height: auto;
+}
+
+.call_to_action {
+    flex: 0 0 100%;
+}
+.call_to_action {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    transition: 0.6s all ease;
+    background-image: linear-gradient(
+        120deg,
+        rgba(16, 34, 45, 1) 0%,
+        33.22884142398834%,
+        rgba(85, 187, 216, 1) 100%
+    );
+    color: white;
+    font-size: 18px;
+}
+
+.call_to_action:hover {
+    scale: 1.025;
+}
