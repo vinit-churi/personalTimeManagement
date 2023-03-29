@@ -1,0 +1,83 @@
+.authModal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.503);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.authModalCard {
+    background-color: whitesmoke;
+    display: flex;
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+.authMOdalImageSection {
+    flex: 0 0 35%;
+    padding: 10px;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    /* color: white; */
+    /* text-shadow: #fc0 1px 0 10px; */
+    isolation: isolate;
+}
+.authMOdalImageSection > * {
+    position: relative;
+    z-index: 10;
+}
+.authMOdalImageSection::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    z-index: -1;
+    background-color: rgba(1, 89, 108, 0.113);
+}
+.authModalFormSection {
+    flex: 0 0 65%;
+    padding: 10px;
+}
+.closeIcon {
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.loginWithGoogleBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 10px;
+    background-color: transparent;
+    width: 300px;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.loginWithGoogleBtn img {
+    width: 30px;
+}
+.loginForm > * {
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+    width: 300px;
+    padding: 0px 5px;
+}
+.loginForm > input[type="submit"] {
+    display: block;
+    color: rgba(255, 255, 255, 0.795);
+    background: linear-gradient(
+        132deg,
+        rgb(31, 207, 195) 0%,
+        rgb(31, 145, 207) 100%
+    );
+    border: 0px;
+    height: auto;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
