@@ -5,7 +5,8 @@ import LoginCircle from "./LoginCircle";
 import LoginSignUpBtn from "./LoginSignUpBtn";
 import { context as contextConsumer } from "../context/context";
 const Navbar = () => {
-    const { userData, isLoggedIn } = useContext(contextConsumer);
+    const { AppContext } = useContext(contextConsumer);
+    const { userData, isLoggedIn } = AppContext;
     return (
         <div className={styles.navbar}>
             <img src={logo} alt="logo" className={styles.logo} />
